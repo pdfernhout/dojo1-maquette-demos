@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="utf-8">
+	<title>Dojo1 Hello using Specifications Editable Component</title>
+	<link rel="stylesheet" type="text/css" href="../styles/hello-styles.css">
+	<script>
+		var dojoConfig = {
+			async: true,
+			baseUrl: '.',
+			paths: {
+				maquette: '../../vendor/maquette/maquette',
+				application: '.'
+			}
+		};
+	</script>
+	<script src="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"></script>
+	<script>
+		require(["application/helloSpecifiedWidget"], function (helloSpecifiedWidget) {
+		});
+	</script>
+  </head>
+  <body>
+  </body>
+</html>

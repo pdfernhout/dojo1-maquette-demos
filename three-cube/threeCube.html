@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Maquette with three.js component demo</title>
+		<style>
+			.threeD {
+				border-style: solid;
+				border-width: 4px;
+				width: 300px;
+				height: 300px;
+			}
+		</style>
+	</head>
+	<body>
+		<script>
+			var dojoConfig = {
+				async: true,
+				baseUrl: '.',
+				paths: {
+					maquette: '../../vendor/maquette/maquette',
+					three: '../vendor/three/three',
+					application: '.'
+				}
+			};
+		</script>
+		<script src="//ajax.googleapis.com/ajax/libs/dojo/1.10.4/dojo/dojo.js"></script>
+		<script>
+		require(["application/threeCube"], function (threeCube) {
+		});
+		</script>
+	</body>
+</html>
